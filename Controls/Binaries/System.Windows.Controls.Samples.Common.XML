@@ -1,0 +1,2585 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Windows.Controls.Samples.Common</name>
+    </assembly>
+    <members>
+        <member name="T:System.Windows.Controls.Samples.Airport">
+            <summary>
+            An Airport class.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Airport.#ctor">
+            <summary>
+            Initializes a new Airport class instance.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Airport.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new Airport class instance. This is a data-entry 
+            friendly constructor.
+            </summary>
+            <param name="city">The city or cities name.</param>
+            <param name="state">The state or region.</param>
+            <param name="faa">The Federal Aviation Administration code.</param>
+            <param name="iata">The International Air Transport Association code.</param>
+            <param name="icao">The four-digit International Civil Aviation
+            Organization code.</param>
+            <param name="airport">The friendly airport name.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Airport.ToString">
+            <summary>
+            The code and name together.
+            </summary>
+            <returns>Returns a string.</returns>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Airport.Name">
+            <summary>
+            Gets or sets the friendly airport name.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Airport.LimitedName">
+            <summary>
+            Gets a sometimes shorter representation of the Name property.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Airport.City">
+            <summary>
+            Gets or sets the airport city or cities name.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Airport.State">
+            <summary>
+            Gets or sets the state, region, or territory name.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Airport.CodeFaa">
+            <summary>
+            Gets or sets the Federal Aviation Administration code.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Airport.CodeIata">
+            <summary>
+            Gets or sets the International Air Transport Association code.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Airport.CodeIcao">
+            <summary>
+            Gets or sets the four-digit International Civil Aviation 
+            Organization code.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Airport.SampleAirports">
+            <summary>
+            Gets a collection of sample airports.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.City">
+            <summary>
+            City business object used for charting samples.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.City.#ctor">
+            <summary>
+            Initializes a new instance of the City class.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.City.ToString">
+            <summary>
+            Returns a string that represents the current object.
+            </summary>
+            <returns>A string that represents the current object.</returns>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.City.Name">
+            <summary>
+            Gets or sets the name of the city.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.City.Population">
+            <summary>
+            Gets or sets the population of the city.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.City.PugetSound">
+            <summary>
+            Gets a collection of cities in the Puget Sound area.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Contact">
+            <summary>
+            Represents a person's contact information.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Contact.firstName">
+            <summary>
+            Represents the first name of the contact.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Contact.lastName">
+            <summary>
+            Represents the last name of the contact.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Contact.phone">
+            <summary>
+            Represents the contact's phone number.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Contact.street1">
+            <summary>
+            Represents the contact's street address.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Contact.street2">
+            <summary>
+            Represents the contact's extended street address (such as an apartment number of P.O. Box).
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Contact.city">
+            <summary>
+            Represents the contact's city.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Contact.state">
+            <summary>
+            Represents the contact's state.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Contact.email">
+            <summary>
+            Represents the contact's e-mail address.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Contact.zip">
+            <summary>
+            Represents the contact's zip code.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Contact.isBusinessAddress">
+            <summary>
+            Indicates whether the address for the contact is a business address.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Contact.#ctor">
+            <summary>
+            Initializes a new contact.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Contact.OnPropertyChanged(System.String)">
+            <summary>
+            Raises a property changed notification for the specified property name.
+            </summary>
+            <param name="propName">The name of the property that changed.</param>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Contact.cache">
+            <summary>
+            Keeps a copy of the original contact for editing.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Contact.BeginEdit">
+            <summary>
+            Indicates that the contact will undergo a cancellable edit.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Contact.CancelEdit">
+            <summary>
+            Indicates that the edit was cancelled and that the old state should be restored.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Contact.EndEdit">
+            <summary>
+            Indicates that the edit completed and that changed fields should be committed.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Contact.FirstName">
+            <summary>
+            Gets or sets the first name of the contact.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Contact.LastName">
+            <summary>
+            Gets or sets the last name of the contact.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Contact.Phone">
+            <summary>
+            Gets or sets the phone number of the contact in the form (###) ###-####.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Contact.Street1">
+            <summary>
+            Gets or sets the street address of the contact.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Contact.Street2">
+            <summary>
+            Gets or sets the secondary street address information for the contact, such as apartment number or P.O. Box.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Contact.City">
+            <summary>
+            Gets or sets the city of the contact.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Contact.State">
+            <summary>
+            Gets or sets the abbreviated state name of the contact (e.g. CA or TN).
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Contact.IsBusinessAddress">
+            <summary>
+            Gets or sets a value indicating whether this contact's address is a business address.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Contact.Email">
+            <summary>
+            Gets or sets the e-mail address (e.g. someone@somewhere.com) for the contact.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Contact.Zip">
+            <summary>
+            Gets or sets the zip code of the contact.
+            </summary>
+        </member>
+        <member name="E:System.Windows.Controls.Samples.Contact.PropertyChanged">
+            <summary>
+            Raised when a property on the contact changes.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Contact.JohnDoe">
+            <summary>
+            Gets a stock "John Doe" contact.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Contact.People">
+            <summary>
+            Gets a stock group of contacts with valid contact information.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Status">
+            <summary>
+            Indicates the status of a customer's payment or complaint.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Status.Closed">
+            <summary>
+            Indicates that the item is closed.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Status.Active">
+            <summary>
+            Indicates that the item is active.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Status.Resolved">
+            <summary>
+            Indicates that the item is resolved.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Customer">
+            <summary>
+            Represents a customer.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.random">
+            <summary>
+            Random number generator.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer._data">
+            <summary>
+            Stores the data for the customer.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer._backupData">
+            <summary>
+            Stores a backup of the customer's data during edits.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer._editing">
+            <summary>
+            Indicates whether the customer is being edited.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer._delayPropertyChangeNotifications">
+            <summary>
+            Indicates whether property change notifications should be enabled.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.#ctor">
+            <summary>
+            Initializes a customer object.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.#ctor(System.String,System.String,System.Windows.Media.Color,System.Int32,System.String,System.Decimal,System.Boolean,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Windows.Controls.Samples.Status,System.Nullable{System.Windows.Controls.Samples.Status})">
+            <summary>
+            Initializes a customer object.
+            </summary>
+            <param name="firstName">Customer's first name.</param>
+            <param name="lastName">Customer's last name.</param>
+            <param name="preferredColor">Customer's preferred color.</param>
+            <param name="rating">Customer's rating.</param>
+            <param name="fullAddress">Customer's full address.</param>
+            <param name="yearlyFees">Customer's yearly fees.</param>
+            <param name="isRegistered">Customer's registration status.</param>
+            <param name="isValid">Customer's validity.</param>
+            <param name="age">Customer's age.</param>
+            <param name="payment">Customer's payment status.</param>
+            <param name="complaint">Customer's complaint status.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.BeginEdit">
+            <summary>
+            Indicates that the contact will undergo a cancellable edit.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.CancelEdit">
+            <summary>
+            Indicates that the edit was cancelled and that the old state should be restored.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.EndEdit">
+            <summary>
+            Indicates that the edit completed and that changed fields should be committed.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.GetRandomCustomer(System.Int32)">
+            <summary>
+            Gets a random customer.
+            </summary>
+            <param name="index">The index of the random customer.</param>
+            <returns>A customer based upon the index.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.GetFakeStatus(System.Random)">
+            <summary>
+            Gets a random status.
+            </summary>
+            <param name="random">Random number generator.</param>
+            <returns>A random status.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.GetFakeString(System.Random)">
+            <summary>
+            Gets a random string of characters.
+            </summary>
+            <param name="random">Random number generator.</param>
+            <returns>A string of randomly selected characters.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.GetFakeBool(System.Random)">
+            <summary>
+            Gets a random bool value.
+            </summary>
+            <param name="random">Random number generator.</param>
+            <returns>A random bool value.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.GetFakeNullableBool(System.Random)">
+            <summary>
+            Gets a random nullable bool value.
+            </summary>
+            <param name="random">Random number generator.</param>
+            <returns>A random nullable bool value.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.GetFakeNullableInteger(System.Random)">
+            <summary>
+            Gets a random integer with a 1 in 6 chance of being null.
+            </summary>
+            <param name="random">Random number generator.</param>
+            <returns>A random nullable integer.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.GetFakeNullableStatus(System.Random)">
+            <summary>
+            Gets a random status, with a 1 in 4 chance of being null.
+            </summary>
+            <param name="random">Random number generator.</param>
+            <returns>A random nullable status.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.CreateFakeCustomer(System.Int32)">
+            <summary>
+            Creates a customer with random data.
+            </summary>
+            <param name="index">Index of the customer to generate.</param>
+            <returns>A random customer.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.GetFakeColor(System.Random)">
+            <summary>
+            Randomly chooses a color from {Blue, Brown, Cyan, Gray, Green, Magenta, Orange, Purple, Red, Yellow}.
+            </summary>
+            <param name="random">Random number generator.</param>
+            <returns>A random color.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Customer.RaisePropertyChanged(System.String)">
+            <summary>
+            Raises a property changed notification.
+            </summary>
+            <param name="propertyName">Name of the property that changed.</param>
+        </member>
+        <member name="E:System.Windows.Controls.Samples.Customer.PropertyChanged">
+            <summary>
+            Raised when a property on the customer changes.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.Age">
+            <summary>
+            Gets or sets the customer's Age.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.Complaint">
+            <summary>
+            Gets or sets the customer's complaint status.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.FirstName">
+            <summary>
+            Gets or sets the customer's first name.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.FullAddress">
+            <summary>
+            Gets or sets the customer's full address.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.IsRegistered">
+            <summary>
+            Gets or sets a value indicating whether the customer is registered.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.IsValid">
+            <summary>
+            Gets or sets a value indicating whether the customer is valid.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.LastName">
+            <summary>
+            Gets or sets the customer's last name.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.Payment">
+            <summary>
+            Gets or sets the customer's payment status.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.PreferredColor">
+            <summary>
+            Gets the customer's preferred color.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.FakeCustomer">
+            <summary>
+            Gets a random customer.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.Rating">
+            <summary>
+            Gets or sets the customer's rating.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.RenewalDate">
+            <summary>
+            Gets or sets the customer's renewal date.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.YearlyFees">
+            <summary>
+            Gets or sets the customer's yearly fees.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Customer.Chars">
+            <summary>
+            Gets a collection of the characters in the customer's first name.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Customer.CustomerData">
+            <summary>
+            Holds the data backing a customer.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.CustomerData.FirstName">
+            <summary>
+            The customer's first name.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.CustomerData.LastName">
+            <summary>
+            The customer's last name.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.CustomerData.PreferredColor">
+            <summary>
+            The customer's preferred color.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.CustomerData.Rating">
+            <summary>
+            The customer's rating.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.CustomerData.RenewalDate">
+            <summary>
+            The customer's renewal date.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.CustomerData.FullAddress">
+            <summary>
+            The customer's full address.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.CustomerData.YearlyFees">
+            <summary>
+            The customer's yearly fees.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.CustomerData.IsRegistered">
+            <summary>
+            The customer's registration status.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.CustomerData.IsValid">
+            <summary>
+            The customer entry's validity.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.CustomerData.Age">
+            <summary>
+            The customer's age.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.CustomerData.Payment">
+            <summary>
+            The customer's payment status.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Customer.CustomerData.Complaint">
+            <summary>
+            The customer's complaint status.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.CustomerCollection">
+            <summary>
+            Represents a collection of Customer objects.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.CustomerCollection._customers">
+            <summary>
+            The underlying list of customers.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.#ctor">
+            <summary>
+            Initializes a CustomerCollection object with 25 customers.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.#ctor(System.Int32)">
+            <summary>
+            Initializes a CustomerCollection.
+            </summary>
+            <param name="customerCount">The number of customers to generate.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the collection.
+            </summary>
+            <param name="array">Destination array.</param>
+            <param name="index">Index to copy to.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.Add(System.Object)">
+            <summary>
+            Adds an item to the collection.
+            </summary>
+            <param name="value">The value to add to the collection.</param>
+            <returns>The index at which the value was added.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.Contains(System.Object)">
+            <summary>
+            Determines whether the collection contains the given value.
+            </summary>
+            <param name="value">The value to search for.</param>
+            <returns>True if the collection contains the value.  False otherwise.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.IndexOf(System.Object)">
+            <summary>
+            Determines the index of the given value.
+            </summary>
+            <param name="value">The value to search for.</param>
+            <returns>The index of the value, or -1 if not found.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.Insert(System.Int32,System.Object)">
+            <summary>
+            Inserts an object at the given index.
+            </summary>
+            <param name="index">Index where the value should be inserted.</param>
+            <param name="value">The value to insert.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.Remove(System.Object)">
+            <summary>
+            Removes the given value from the collection.
+            </summary>
+            <param name="value">Value to remove.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.IndexOf(System.Windows.Controls.Samples.Customer)">
+            <summary>
+            Determines the index of the given customer.
+            </summary>
+            <param name="item">The customer to search for.</param>
+            <returns>The index of the customer, or -1 if not found.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.Insert(System.Int32,System.Windows.Controls.Samples.Customer)">
+            <summary>
+            Inserts a customer at the given index.
+            </summary>
+            <param name="index">Index where the value should be inserted.</param>
+            <param name="item">Customer to insert.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes the item at the given index.
+            </summary>
+            <param name="index">Index at which the item should be removed.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.Add(System.Windows.Controls.Samples.Customer)">
+            <summary>
+            Adds a customer to the collection.
+            </summary>
+            <param name="item">Customer to add.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.Clear">
+            <summary>
+            Clears the collection.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.Contains(System.Windows.Controls.Samples.Customer)">
+            <summary>
+            Determines whether the collection contains the given customer.
+            </summary>
+            <param name="item">The customer to search for.</param>
+            <returns>True if the collection contains the customer.  False otherwise.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.CopyTo(System.Windows.Controls.Samples.Customer[],System.Int32)">
+            <summary>
+            Copies customers from this collection into an array.
+            </summary>
+            <param name="array">Destination array.</param>
+            <param name="arrayIndex">Start index in the array into which customers will be copied.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.Remove(System.Windows.Controls.Samples.Customer)">
+            <summary>
+            Removes a customer from the collection.
+            </summary>
+            <param name="item">Customer to remove.</param>
+            <returns>True if the customer was found and removed.  False otherwise.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.GetEnumerator">
+            <summary>
+            Enumerates over the customers in the collection.
+            </summary>
+            <returns>An enumerator for the customers.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Enumerates over the customers in the collection.
+            </summary>
+            <returns>An enumerator for the customers.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.CustomerCollection.RaiseCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Raises the CollectionChanged event.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="E:System.Windows.Controls.Samples.CustomerCollection.CollectionChanged">
+            <summary>
+            Notifies of changes to the collection.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.CustomerCollection.IsSynchronized">
+            <summary>
+            Gets a value indicating whether the collection supports asynchronous operations.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.CustomerCollection.SyncRoot">
+            <summary>
+            Gets an object to use for synchronization.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.CustomerCollection.IsFixedSize">
+            <summary>
+            Gets a value indicating whether the collection has a fixed size.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.CustomerCollection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the collection is read-only.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.CustomerCollection.System#Collections#IList#Item(System.Int32)">
+            <summary>
+            Returns the customer at an index.
+            </summary>
+            <param name="index">Index to retrieve.</param>
+            <returns>The customer at the given index in the collection.</returns>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.CustomerCollection.Item(System.Int32)">
+            <summary>
+            Gets the customer at the given index.
+            </summary>
+            <param name="index">Index of the customer.</param>
+            <returns>The customer at the given index.</returns>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.CustomerCollection.Count">
+            <summary>
+            Gets the number of items in the collection.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.NhlDataHelper">
+            <summary>
+            Holds helper methods to load or generate test data used in the TreeMap samples.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.NhlDataHelper._random">
+            <summary>
+            A random number generator for generating test trees.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.NhlDataHelper.LoadNhlNodes(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement})">
+            <summary>
+            Helper to load a tree of NhlNodes from an XML document.
+            </summary>
+            <param name="elements">Collection of XElement objects representing the current level of nodes to be loaded.</param>
+            <returns>A list of NhlNode objects loaded from their XElement counterparts.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.NhlDataHelper.LoadDefaultFile">
+            <summary>
+            Loads test data from the default XML data file.
+            </summary>
+            <returns>A list of NhlNode objects which can be set as the ItemsSource in the TreeMap.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.NhlDataHelper.CreateRandomTree(System.Int32,System.Int32)">
+            <summary>
+            Helper to generate a random hierarchy of the specified depth, with the specified number
+            of children at each level.
+            </summary>
+            <param name="depth">Number of levels in the generated tree.</param>
+            <param name="nodesPerLevel">Number of children of each node.</param>
+            <returns>The root node of the randomly generated tree.</returns>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Department">
+            <summary>
+            Represents a department in an organization.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Department.#ctor">
+            <summary>
+            Initializes a new instance of the Department class.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Department.Title">
+            <summary>
+            Gets or sets the title of the department.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Department.Employees">
+            <summary>
+            Gets a collection of employees in the department.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Department.Divisions">
+            <summary>
+            Gets a collection of divisions inside the department.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Department.AllDepartments">
+            <summary>
+            Gets a sample hierarchy of departments and employees.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.DoodadPopularityPollCollection">
+            <summary>
+            Tracks the popularity of Doodads.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.DoodadPopularityPollCollection.GetEnumerator">
+            <summary>
+            Returns a stream of popularity polls.
+            </summary>
+            <returns>A stream of popularity polls.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.DoodadPopularityPollCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns a stream of popularity polls.
+            </summary>
+            <returns>A stream of popularity polls.</returns>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Feature">
+            <summary>
+            Represents a feature that can be installed.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Feature.#ctor">
+            <summary>
+            Initializes a new instance of the Feature class.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Feature._shouldInstall">
+            <summary>
+            Backing variable for the ShouldInstall property.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Feature.OnPropertyChanged(System.String)">
+            <summary>
+            Fires the PropertyChanged event.
+            </summary>
+            <param name="propertyName">Property that changed.</param>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Feature.FeatureName">
+            <summary>
+            Gets or sets the name of the feature.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Feature.Description">
+            <summary>
+            Gets or sets the description of the feature.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Feature.Subcomponents">
+            <summary>
+            Gets a collection of sub-components that make up the feature.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Feature.HasSubcomponents">
+            <summary>
+            Gets a value indicating whether the feature has subcomponents.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Feature.ShouldInstall">
+            <summary>
+            Gets or sets whether the feature should be installed.
+            </summary>
+        </member>
+        <member name="E:System.Windows.Controls.Samples.Feature.PropertyChanged">
+            <summary>
+            Implements the INotifyPropertyChanged interface.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.GizmoPopularityPollCollection">
+            <summary>
+            Tracks the popularity of Gizmos.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.GizmoPopularityPollCollection.GetEnumerator">
+            <summary>
+            Returns a stream of popularity polls.
+            </summary>
+            <returns>A stream of popularity polls.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.GizmoPopularityPollCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns a stream of popularity polls.
+            </summary>
+            <returns>A stream of popularity polls.</returns>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.MemberInfoData">
+            <summary>
+            A wrapper type that can be used for visually displaying reflected type 
+            information.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.MemberInfoData.GetSetForType(System.Type)">
+            <summary>
+            Gets an enumerable set of PME information objects.
+            </summary>
+            <param name="type">The type to reflect over.</param>
+            <returns>Returns the set of MemberInfoData objects.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.MemberInfoData.#ctor(System.Reflection.MemberInfo)">
+            <summary>
+            Initializes a new instance of the MemberInfoData class 
+            with the provided MemberInfo object's data.
+            </summary>
+            <param name="mi">The member info object.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.MemberInfoData.ToString">
+            <summary>
+            Overrides the ToString method to display the name.
+            </summary>
+            <returns>Returns the name as a string.</returns>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.MemberInfoData.MemberInfo">
+            <summary>
+            Gets the member information object.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.MemberInfoData.IconName">
+            <summary>
+            Gets or sets the icon string name.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.MemberInfoData.Icon">
+            <summary>
+            Gets the icon.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.MemberInfoData.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.MemberInfoData.ForegroundColor">
+            <summary>
+            Gets the foreground color based on method properties.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Album">
+            <summary>
+            Represents a music album.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Album.#ctor">
+            <summary>
+            Initializes a new instance of the Album class.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Album.Title">
+            <summary>
+            Gets or sets the title of the Album.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Album.ReleaseYear">
+            <summary>
+            Gets or sets the year the Album was released.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Album.Icon">
+            <summary>
+            Gets the icon.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Album.Songs">
+            <summary>
+            Gets a collection of songs contained in the Album.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Artist">
+            <summary>
+            Represents a musical artist.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Artist.#ctor">
+            <summary>
+            Initializes a new instance of the Artist class.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Artist.ArtistName">
+            <summary>
+            Gets or sets the name of the Artist.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Artist.Genre">
+            <summary>
+            Gets or sets the genre of the Artist.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Artist.Albums">
+            <summary>
+            Gets a collection of albums released by the Artist.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Artist.Icon">
+            <summary>
+            Gets the icon.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Artist.AllArtists">
+            <summary>
+            Gets a collection of artists.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Song">
+            <summary>
+            Represents a music song.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Song.Title">
+            <summary>
+            Gets or sets the title of the Song.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Song.Length">
+            <summary>
+            Gets or sets the length of the Song.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Song.Icon">
+            <summary>
+            Gets the icon.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.NhlNode">
+            <summary>
+            Represents the statistics for a team, division, conference, or the league as a whole.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.NhlNode.Rank">
+            <summary>
+            Gets or sets a value representing the rank of the node in its level (team, division, etc).
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.NhlNode.Name">
+            <summary>
+            Gets or sets a value representing the name of the entity (team, division, etc).
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.NhlNode.Points">
+            <summary>
+            Gets or sets a value representing the number of points either for a single team in the case of a leaf, 
+            or the aggregate sum of the children for a parent node.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.NhlNode.Wins">
+            <summary>
+            Gets or sets a value representing the number of wins either for a single team in the case of a leaf, 
+            or the aggregate sum of the children for a parent node.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.NhlNode.Losses">
+            <summary>
+            Gets or sets a value representing the number of losses either for a single team in the case of a leaf, 
+            or the aggregate sum of the children for a parent node.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.NhlNode.GoalsFor">
+            <summary>
+            Gets or sets a value representing the number of goals earned in the season either for a single team in the case of a leaf, 
+            or the aggregate sum of the children for a parent node.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.NhlNode.GoalsAgainst">
+            <summary>
+            Gets or sets a value representing the number of goals against accrued either for a single team in the case of a leaf, 
+            or the aggregate sum of the children for a parent node.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.NhlNode.PenaltyMinutes">
+            <summary>
+            Gets or sets a value representing the number of penalty minutes accrued either for a single team in the case of a leaf, 
+            or the aggregate sum of the children for a parent node.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.NhlNode.Children">
+            <summary>
+            Gets or sets a value representing the children of this division, conference, or league. Empty for teams.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.NhlNode.ToolTip">
+            <summary>
+            Gets the desired tooltip content.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.ParticulateLevel">
+            <summary>
+            ParticulateLevel business object used for charting samples.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.ParticulateLevel.#ctor">
+            <summary>
+            Initializes a new instance of the ParticulateLevel class.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.ParticulateLevel.Particulate">
+            <summary>
+            Gets or sets the particulate count.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.ParticulateLevel.Rainfall">
+            <summary>
+            Gets or sets the daily rainfall.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.ParticulateLevel.LevelsInRainfall">
+            <summary>
+            Gets a collection of particulate levels for rainfall.
+            </summary>
+            <remarks>
+            Sample data from http://office.microsoft.com/en-us/help/HA102274781033.aspx.
+            </remarks>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Employee">
+            <summary>
+            Employee business object used in DataTemplate examples.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Employee.#ctor">
+            <summary>
+            Initializes a new instance of the Employee class.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Employee.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the Employee class.
+            </summary>
+            <param name="firstName">First name of the employee.</param>
+            <param name="lastName">Last name of the employee.</param>
+            <param name="resourceName">
+            Name of a resource containing a photograph of the employee.
+            </param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Employee.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the Employee class.
+            </summary>
+            <param name="firstName">First name of the employee.</param>
+            <param name="lastName">Last name of the employee.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Employee.ToString">
+            <summary>
+            Overrides the ToString method to return the DisplayName for the 
+            Employee.
+            </summary>
+            <returns>Returns the full name of the employee.</returns>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Employee.FirstName">
+            <summary>
+            Gets or sets the first name of the employee.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Employee.LastName">
+            <summary>
+            Gets or sets the last name of the employee.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Employee.Photograph">
+            <summary>
+            Gets or sets a Photograph of the employee.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Employee.DisplayName">
+            <summary>
+            Gets the display name for the employee. Uses simple concatenation 
+            currently.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Employee.BillGates">
+            <summary>
+            Gets an Employee object that represents Bill Gates.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Employee.SteveBallmer">
+            <summary>
+            Gets an Employee object that represents Steve Ballmer.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Employee.Somasegar">
+            <summary>
+            Gets an Employee object that represents S. Somasegar.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Employee.ScottGuthrie">
+            <summary>
+            Gets an Employee object that represents Scott Guthrie.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Employee.Executives">
+            <summary>
+            Gets a collection of various executives at the company.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Employee.AllExecutives">
+            <summary>
+            Gets a collection of executive leaders as defined online, as of 
+            10/14/08.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.PopularityPoll">
+            <summary>
+            A popularity poll for something, taken on a given date.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.PopularityPoll.Date">
+            <summary>
+            Gets or sets the date on which the poll was taken.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.PopularityPoll.Percent">
+            <summary>
+            Gets or sets the percentage of support the thing had.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.TechEmployee">
+            <summary>
+            A person object.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.TechEmployee.#ctor">
+            <summary>
+            Initializes a new instance of the TechEmployee class.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.TechEmployee.Name">
+            <summary>
+            Gets or sets the name of the person.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.TechEmployee.AssignedBugs">
+            <summary>
+            Gets or sets the number of check-ins.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.TechEmployee.ResolvedBugs">
+            <summary>
+            Gets or sets the number of resolved bugs.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.TechEmployee.Salary">
+            <summary>
+            Gets or sets the TechEmployee salary.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.TechEmployee.Reports">
+            <summary>
+            Gets a list of reports.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.TechEmployee.AllTechEmployees">
+            <summary>
+            Gets all the tech employees of the fictional company.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.WidgetPopularityPollCollection">
+            <summary>
+            Tracks the popularity of widgets.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.WidgetPopularityPollCollection.GetEnumerator">
+            <summary>
+            Returns a stream of popularity polls.
+            </summary>
+            <returns>A stream of popularity polls.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.WidgetPopularityPollCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns a stream of popularity polls.
+            </summary>
+            <returns>A stream of popularity polls.</returns>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Class">
+            <summary>
+            Represents a Class in a Linnaean taxonomy.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Taxonomy">
+            <summary>
+            Represents an item contained in a level of a Linnaean taxonomy.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Taxonomy.#ctor">
+            <summary>
+            Initializes a new instance of the TaxonomicItem class.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Taxonomy.ToString">
+            <summary>
+            Get a string representation of the TaxonomicItem.
+            </summary>
+            <returns>String representation of the TaxonomicItem.</returns>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Taxonomy.Life">
+            <summary>
+            Gets a subset of all life on the planet.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Taxonomy.Rank">
+            <summary>
+            Gets the name of the TaxonomicRank.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Taxonomy.Classification">
+            <summary>
+            Gets or sets the classification of the item being ranked.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Taxonomy.Subclasses">
+            <summary>
+            Gets the subclasses of of the item being ranked.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Class.#ctor">
+            <summary>
+            Initializes a new instance of the Class class.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Domain">
+            <summary>
+            Represents a Domain in a Linnaean taxonomy.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Domain.#ctor">
+            <summary>
+            Initializes a new instance of the Domain class.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Family">
+            <summary>
+            Represents a Family in a Linnaean taxonomy.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Family.#ctor">
+            <summary>
+            Initializes a new instance of the Family class.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Genus">
+            <summary>
+            Represents a Genus in a Linnaean taxonomy.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Genus.#ctor">
+            <summary>
+            Initializes a new instance of the Genus class.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Kingdom">
+            <summary>
+            Represents a Kingdom in a Linnaean taxonomy.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Kingdom.#ctor">
+            <summary>
+            Initializes a new instance of the Kingdom class.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Order">
+            <summary>
+            Represents an Order in a Linnaean taxonomy.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Order.#ctor">
+            <summary>
+            Initializes a new instance of the Order class.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Phylum">
+            <summary>
+            Represents a Phylum in a Linnaean taxonomy.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Phylum.#ctor">
+            <summary>
+            Initializes a new instance of the Phylum class.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Species">
+            <summary>
+            Represents a Species in a Linnaean taxonomy.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Species.#ctor">
+            <summary>
+            Initializes a new instance of the Species class.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Words">
+            <summary>
+            A set of words to use in control samples.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Words.GetAliceInWonderland">
+            <summary>
+            Gets a list of words from the book Alice in Wonderland.
+            </summary>
+            <returns>Returns a very large string array.</returns>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.Words.AliceInWonderland">
+            <summary>
+            A static string array of words.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.Photograph">
+            <summary>
+            Photograph business object used in examples.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Photograph.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the Photograph class.
+            </summary>
+            <param name="resourceName">
+            Name of the resource defining the photograph.
+            </param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Photograph.ToString">
+            <summary>
+            Overrides the string to return the name.
+            </summary>
+            <returns>Returns the photograph name.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.Photograph.GetPhotographs">
+            <summary>
+            Get all of the photographs defined in the assembly as embedded
+            resources.
+            </summary>
+            <returns>
+            All of the photographs defined in the assembly as embedded
+            resources.
+            </returns>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Photograph.Name">
+            <summary>
+            Gets the name of the Photograph.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.Photograph.Image">
+            <summary>
+            Gets an Image control containing the Photograph.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.ISampleMetadata">
+            <summary>
+            Set of metadata needed for each sample.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.ISampleMetadata.Name">
+            <summary>
+            Gets the Sample name.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.ISampleMetadata.DifficultyLevel">
+            <summary>
+            Gets the Sample DifficultyLevel.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.ISampleMetadata.Category">
+            <summary>
+            Gets the Sample category.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.EmbeddedImage">
+            <summary>
+            ImageLoader is used to load an Embedded Resource Image.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.EmbeddedImage.ImageLoaderName">
+            <summary>
+            Name of the Image part.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.EmbeddedImage._resourceName">
+            <summary>
+            Name of the resource to be loaded.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.EmbeddedImage.#ctor">
+            <summary>
+            Initializes a new instance of the ImageLoader class.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.EmbeddedImage.OnApplyTemplate">
+            <summary>
+            Retrieve select elements from a control template.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.EmbeddedImage.SetEmbeddedImage(System.String)">
+            <summary>
+            Helper function to set the embedded image source.
+            </summary>
+            <param name="resourceName">Resource name to be loaded.</param>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.EmbeddedImage.ResourceName">
+            <summary>
+            Gets or sets the name of the image to be loaded.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SampleTreeItem">
+            <summary>
+            The SampleTreeItem represents a node in the TreeView.  
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleTreeItem.#ctor">
+            <summary>
+            Initialize a SampleTreeItem.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleTreeItem.TreeItemName">
+            <summary>
+            Gets or sets the name of the TreeView node.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleTreeItem.Items">
+            <summary>
+             Gets a collection of SampleTreeItems.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleTreeItem.IconResourceName">
+            <summary>
+            Gets or sets the resource name of the Icon representing this 
+            node.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleTreeItem.Icon">
+            <summary>
+            Gets the icon representing this type. 
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SampleAttribute">
+            <summary>
+            The SampleAttribute identifies sample name and level of difficulty.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleAttribute.#ctor(System.String,System.Windows.Controls.Samples.DifficultyLevel,System.String)">
+            <summary>
+            Initializes a new instance of the SampleAttribute class.
+            </summary>
+            <param name="name">
+            Name of the sample.
+            </param>
+            <param name="difficultyLevel">
+            Difficulty Level of the sample.
+            </param>
+            <param name="category">
+            Category of the sample.
+            </param>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleAttribute.Name">
+            <summary>
+            Gets the path to the sample in the Sample Browser tree.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleAttribute.DifficultyLevel">
+            <summary>
+            Gets the difficulty level of the sample.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleAttribute.Category">
+            <summary>
+            Gets the category for this sample.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SampleBrowser">
+            <summary>
+            The SampleBrowser is used to display interactive samples of controls,
+            styles, and scenarios.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.SourceViewerRow">
+            <summary>
+            SampleDisplayArea Grid row number where the source viewer is 
+            located.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.DeepPathLinkQueryStringParamName">
+            <summary>
+            Deep Path Link QueryString Parameter Name.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.SampleSelectionName">
+            <summary>
+            Name of the sample selection TreeView.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.SamplesTabName">
+            <summary>
+            Name of the samples TabControl .
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.FullScreenButtonName">
+            <summary>
+            Name of the button that toggles full screen.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.SourceListName">
+            <summary>
+            Name of the source list ListBox.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.SourceTextName">
+            <summary>
+            Name of the source text TextBox.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.RootName">
+            <summary>
+            Name of root layout for the Sample Browser.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.SampleDisplayAreaName">
+            <summary>
+            Name of the grid containing the sample and source file viewer.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.SourceExpanderName">
+            <summary>
+            Name of the expander containing the source file viewer.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.SampleGridSplitterName">
+            <summary>
+            Name of the GridSplitter that separates the sample from the source
+            file viewer.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.TabItemStyleName">
+            <summary>
+            Name of the TabItem style defined in generic.xaml.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.SampleHeaderName">
+            <summary>
+            Name of the Sample Header.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser.SampleLevelName">
+            <summary>
+            Name of the Label containing the Sample Level defined in 
+            generic.xaml.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser._sampleSelection">
+            <summary>
+            The TreeView used for selecting samples.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser._fullscreenButton">
+            <summary>
+            The button that toggles full screen view.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SampleBrowser._sourceList">
+            <summary>
+            ListBox used to select the sample or source file to view.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Controls.Samples.SampleTreeItem})">
+            <summary>
+            Initializes a new instance of the SampleBrowser class.
+            </summary>
+            <param name="sampleTreeItems">Items used to populate the TreeView.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.PopulateSamplesTab(System.String)">
+            <summary>
+            Populate the Tab with samples name for a given control.
+            </summary>
+            <param name="controlName">Name of the control.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.GetPathForLevel(System.Int32)">
+            <summary>
+            Returns the Initial Deep Path Link Lookup.
+            </summary>
+            <param name="level">Deep path link level.</param>
+            <returns>The deep path for that level.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.OnSampleLayoutUpdated(System.Object,System.EventArgs)">
+            <summary>
+            Expands the Sample TreeView.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.OnApplyTemplate">
+            <summary>
+            Retrieve select elements from a control template.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.SelectNavigationOnDeepLinkPath">
+            <summary>
+            Select a TreeViewItem and a TabItem used for navigation based on the query string
+            deep link path. 
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.SelectTreeViewItemFor(System.Windows.Controls.Samples.SampleTreeItem,System.Windows.Controls.Samples.SampleTreeItem)">
+            <summary>
+            Selects a tree view item based on an item.
+            </summary>
+            <param name="firstLevelItem">Item that correlates to a the first level TreeViewItem.</param>
+            <param name="secondLevelItem">Item that correlates to a the second level TreeViewItem.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.SelectTreeViewItemFor(System.Windows.Controls.Samples.SampleTreeItem)">
+            <summary>
+            Selects a tree view item based on an item.
+            </summary>
+            <param name="firstLevelItem">Item that correlates to a the TreeViewItem.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.OnSelectedSampleChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            Change the selected sample.
+            </summary>
+            <param name="sender">The samples TreeView.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.OnSourceCollapsed(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Collapse the Source File Viewer.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.OnSourceExpanded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Expands the Source File Viewer.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.OnSamplesTabSelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            SamplesTab selection changed.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.OnToggleFullScreen(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Toggle the full screen view of the samples.
+            </summary>
+            <param name="sender">The ToggleButton.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.OnFullScreenChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handle full screen changes to the application.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.LoadSample">
+            <summary>
+            Change the selected sample.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.UpdateDifficultyLevel(System.Windows.Controls.Samples.SampleBrowserItem)">
+            <summary>
+            Updates the Sample Name and the Level labels.
+            </summary>
+            <param name="item">SampleBrowserItem containing Sample related
+            information.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.SetSourceViewer(System.Windows.Controls.Samples.SourceViewer)">
+            <summary>
+            Set the SourceViewer for the current sample.
+            </summary>
+            <param name="viewer">The SourceViewer.</param>
+            <remarks>
+            This is called by the SourceViewer when loaded as a way to notify
+            the browser that it has source without resorting to walking the
+            visual tree, etc.
+            </remarks>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.ExpandSourceViewerArea">
+            <summary>
+            Expands the Source Viewer Area when there are source files to 
+            display.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.ExpandSampleDisplayArea">
+            <summary>
+            Expands the Sample Display Area when there is no Source File to 
+            display. 
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.Show(System.Windows.Controls.Control)">
+            <summary>
+            Helper method to begin a storyboard associated with a control.
+            </summary>
+            <param name="control">Control containing a storyboard to be played.
+            </param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.CreateMenuItem(System.String,System.String)">
+            <summary>
+            Helper method to create menu items.
+            </summary>
+            <param name="resourceName">Name of the resource to be loaded.</param>
+            <param name="text">Text representing the menu item.</param>
+            <returns>Returns a stack panel with Image and Text.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.CreateTextBlock(System.String)">
+            <summary>
+            Helper function used to generate TextBlock that share common
+            properties.
+            </summary>
+            <param name="text">Text to be used when creating the TextBlock.
+            </param>
+            <returns>TextBlock control with common properties set.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowser.OnSourceFileChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Choose the source file to view.
+            </summary>
+            <param name="sender">The SourceList.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.SampleSelection">
+            <summary>
+            Gets or sets the TreeView used for selecting samples.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.SampleRoot">
+            <summary>
+            Gets or sets the root layout.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.SampleDisplayArea">
+            <summary>
+            Gets or sets the sample display area grid.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.SampleGridSplitter">
+            <summary>
+            Gets or sets the grid splitter that separates the sample
+            from the source viewer.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.SampleTabItemStyle">
+            <summary>
+            Gets or sets the style for the sample tab items.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser._sourceExpander">
+            <summary>
+            Gets or sets The expander that holds the list of files and content area where
+            they are rendered.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.SourceExpander">
+            <summary>
+            Gets or sets the Expander that hosts the samples.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.SamplesTab">
+            <summary>
+            Gets or sets the tabControl that hosts the samples.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.FullScreenButton">
+            <summary>
+            Gets or sets the button that toggles full screen view.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.SourceList">
+            <summary>
+            Gets or sets the ListBox used to select the sample or source file to
+            view.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.SourceText">
+            <summary>
+            Gets or sets the source text TextBox.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.SampleHeader">
+            <summary>
+            Gets or sets the sample header label.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.SampleDifficultyLevel">
+            <summary>
+            Gets or sets the sample difficulty level label.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.Current">
+            <summary>
+            Gets or sets a reference to the current SampleBrowser control.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.SampleTreeItems">
+            <summary>
+            Gets or sets the items used to populate the TreeView.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.IsSourceViewCollapsed">
+            <summary>
+            Gets or sets a value indicating whether the SourceView expander 
+            is collapsed by the user.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.CurrentSourceFile">
+            <summary>
+            Gets or sets a value indicating the current source file displayed.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.Samples">
+            <summary>
+            Gets or sets the set of Samples. This must be public because SL doesn't support
+            non-public reflection which MEF needs to set this property.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowser.IsDeepPathLinkSpecified">
+            <summary>
+            Gets a value indicating whether the Deep Path Link query string parameter was specified.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SampleBrowserItem">
+            <summary>
+            The SampleBrowserItem class represents an individual sample in tab control
+            samples. 
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowserItem.#ctor(System.String,System.Lazy{System.Windows.FrameworkElement,System.Windows.Controls.Samples.ISampleMetadata})">
+            <summary>
+            Only way to create a SampleBrowerItem is via the AddSample static method.
+            </summary>
+            <param name="name">Display name.</param>
+            <param name="lazySample">Creator for the sample.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowserItem.ToString">
+            <summary>
+            Overrides the ToString method to return the Name of the Sample.
+            </summary>
+            <returns>Returns the Name of the sample.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowserItem.GetSample">
+            <summary>
+            Gets the sample represented by this item.
+            </summary>
+            <returns>The sample represented by this item.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SampleBrowserItem.AddSample(System.Collections.Generic.IList{System.Windows.Controls.Samples.SampleBrowserItem},System.Lazy{System.Windows.FrameworkElement,System.Windows.Controls.Samples.ISampleMetadata})">
+            <summary>
+            Create a SampleBrowserItem and inserts into the right location.
+            </summary>
+            <param name="Samples">Collections of Samples.</param>
+            <param name="sample">Lazy version of the sample to add.</param>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowserItem.Name">
+            <summary>
+            Gets the name of the sample.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowserItem.OriginalName">
+            <summary>
+            Gets or sets the name of the sample to use for sorting.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowserItem.SampleType">
+            <summary>
+            Gets the sample type.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SampleBrowserItem.SampleLevel">
+            <summary>
+            Gets the level difficulty of the sample.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.DifficultyLevel">
+            <summary>
+            Describes the level of difficulty of the sample.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.DifficultyLevel.None">
+            <summary>
+            Used when Sample does not need to be categorized.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.DifficultyLevel.Basic">
+            <summary>
+            Used for basic samples.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.DifficultyLevel.Intermediate">
+            <summary>
+            Used for intermediate samples.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.DifficultyLevel.Advanced">
+            <summary>
+            Used for advanced samples.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.DifficultyLevel.Scenario">
+            <summary>
+            Used for scenario samples.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SharedResources">
+            <summary>
+            Utility to to load shared resources into another ResourceDictionary.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SharedResources.ResourceImagePrefix">
+            <summary>
+            Prefix of images loaded as resources.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SharedResources.ResourceIconPrefix">
+            <summary>
+            Prefix of icons loaded as resources.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SharedResources.GetImage(System.String)">
+            <summary>
+            Get an embedded resource image from the assembly.
+            </summary>
+            <param name="name">Name of the image resource.</param>
+            <returns>
+            Desired embedded resource image from the assembly.
+            </returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SharedResources.GetIcon(System.String)">
+            <summary>
+            Get an embedded resource icon from the assembly.
+            </summary>
+            <param name="name">Name of the icon resource.</param>
+            <returns>
+            Desired embedded resource icon from the assembly.
+            </returns>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SharedResources.cachedBitmapImages">
+            <summary>
+            A cached dictionary of the bitmap images.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SharedResources.CreateImage(System.String,System.String)">
+            <summary>
+            Get an embedded resource image from the assembly.
+            </summary>
+            <param name="prefix">The prefix of the full name of the resource.</param>
+            <param name="name">Name of the image resource.</param>
+            <returns>
+            Desired embedded resource image from the assembly.
+            </returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SharedResources.GetImageNames">
+            <summary>
+            Get all of the names of embedded resources images in the assembly.
+            </summary>
+            <returns>
+            All of the names of embedded resources images in the assembly.
+            </returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SharedResources.GetIconNames">
+            <summary>
+            Get all of the names of embedded resources icons in the assembly.
+            </summary>
+            <returns>
+            All of the names of embedded resources icons in the assembly.
+            </returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SharedResources.GetImages">
+            <summary>
+            Get all of the images in the assembly.
+            </summary>
+            <returns>All of the images in the assembly.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SharedResources.GetIcons">
+            <summary>
+            Get all of the icons in the assembly.
+            </summary>
+            <returns>All of the icons in the assembly.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SharedResources.GetResourceNames(System.String)">
+            <summary>
+            Get all the names of embedded resources in the assembly with the 
+            provided prefix value.
+            </summary>
+            <param name="prefix">The prefix for the full resource name.</param>
+            <returns>Returns an enumerable of all the resource names that match.</returns>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SourceFile">
+            <summary>
+            Represents a file used by a sample and its source.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SourceFile.#ctor">
+            <summary>
+            Initializes a new instance of the SourceFile class.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SourceFile.Path">
+            <summary>
+            Gets or sets the path to the file.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SourceFile.Source">
+            <summary>
+            Gets or sets the source code in the file.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SourceFile.Extension">
+            <summary>
+            Gets the extension of the filename.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SourceFile.SourceType">
+            <summary>
+            Gets the source language type to use for displaying the source code.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SourceViewer">
+            <summary>
+            The SourceViewer is used to browse the source for a sample.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SourceViewer._files">
+            <summary>
+            A collection of source files to view.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SourceViewer.#ctor">
+            <summary>
+            Initializes a new instance of the SourceViewer class.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SourceViewer.Files">
+            <summary>
+            Gets a collection of source files to view.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.CodeColorizer">
+            <summary>
+            Colorizes source code.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.ICodeColorizer">
+            <summary>
+            Defines the contract for a code colorizer.
+            </summary>
+            <seealso cref="T:System.Windows.Controls.Samples.SyntaxHighlighting.CodeColorizer"/>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.ICodeColorizer.Colorize(System.String,System.Windows.Controls.Samples.SyntaxHighlighting.ILanguage)">
+            <summary>
+            Colorizes source code using the specified language, the default formatter, and the default style sheet.
+            </summary>
+            <param name="sourceCode">The source code to colorize.</param>
+            <param name="language">The language to use to colorize the source code.</param>
+            <returns>The colorized source code.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.ICodeColorizer.Colorize(System.String,System.Windows.Controls.Samples.SyntaxHighlighting.ILanguage,System.Windows.Controls.Samples.SyntaxHighlighting.IFormatter,System.Windows.Controls.Samples.SyntaxHighlighting.IStyleSheet)">
+            <summary>
+            Colorizes source code using the specified language, formatter, and style sheet.
+            </summary>
+            <param name="sourceCode">The source code to colorize.</param>
+            <param name="language">The language to use to colorize the source code.</param>
+            <param name="formatter">The formatter to use to colorize the source code.</param>
+            <param name="styleSheet">The style sheet to use to colorize the source code.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.CodeColorizer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Windows.Controls.Samples.SyntaxHighlighting.CodeColorizer"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.CodeColorizer.#ctor(System.Windows.Controls.Samples.SyntaxHighlighting.ILanguageParser)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Windows.Controls.Samples.SyntaxHighlighting.CodeColorizer"/> class.
+            </summary>
+            <param name="languageParser">The language parser that the 
+            <see cref="T:System.Windows.Controls.Samples.SyntaxHighlighting.CodeColorizer"/> instance will use for its lifetime.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.CodeColorizer.Colorize(System.String,System.Windows.Controls.Samples.SyntaxHighlighting.ILanguage)">
+            <summary>
+            Colorizes source code using the specified language, the default 
+            formatter, and the default style sheet.
+            </summary>
+            <param name="sourceCode">The source code to colorize.</param>
+            <param name="language">The language to use to colorize the source 
+            code.</param>
+            <returns>The colorized source code.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.CodeColorizer.Colorize(System.String,System.Windows.Controls.Samples.SyntaxHighlighting.ILanguage,System.Windows.Controls.Samples.SyntaxHighlighting.IFormatter,System.Windows.Controls.Samples.SyntaxHighlighting.IStyleSheet)">
+            <summary>
+            Colorizes source code using the specified language, formatter, and 
+            style sheet.
+            </summary>
+            <param name="sourceCode">The source code to colorize.</param>
+            <param name="language">The language to use to colorize the source 
+            code.</param>
+            <param name="formatter">The formatter to use to colorize the source 
+            code.</param>
+            <param name="styleSheet">The style sheet to use to colorize the 
+            source code.</param>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.ILanguage">
+            <summary>
+            Defines how ColorCode will parse the source code of a given language.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.ILanguage.Id">
+            <summary>
+            Gets the identifier of the language (e.g., csharp).
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.ILanguage.FirstLinePattern">
+            <summary>
+            Gets the first line pattern (regex) to use when determining if the language matches a source text.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.ILanguage.Name">
+            <summary>
+            Gets the "friendly" name of the language (e.g., C#).
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.ILanguage.Rules">
+            <summary>
+            Gets the collection of language rules in the language.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.RichTextBoxFormatter">
+            <summary>
+            A formatter for source that uses a RichTextBox.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.IFormatter">
+            <summary>
+            Defines the contract for a source code formatter.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.IFormatter.Write(System.String,System.Collections.Generic.IList{System.Windows.Controls.Samples.SyntaxHighlighting.Scope},System.Windows.Controls.Samples.SyntaxHighlighting.IStyleSheet)">
+            <summary>
+            Writes the parsed source code to the ouput using the specified style sheet.
+            </summary>
+            <param name="parsedSourceCode">The parsed source code to format and write to the output.</param>
+            <param name="scopes">The captured scopes for the parsed source code.</param>
+            <param name="styleSheet">The style sheet according to which the source code will be formatted.</param>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SyntaxHighlighting.RichTextBoxFormatter._textBox">
+            <summary>
+            Backing field for the text box instance.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SyntaxHighlighting.RichTextBoxFormatter._para">
+            <summary>
+            Paragraph backing field.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.RichTextBoxFormatter.#ctor(System.Windows.Controls.RichTextBox)">
+            <summary>
+            Initializes a new instance of the XAML inline formatter which will
+            store the contents of the syntax highlighting results into the
+            rich text box instance.
+            </summary>
+            <param name="richTextBox">The rich text box instance.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.RichTextBoxFormatter.#ctor">
+            <summary>
+            Initializes a new instance of the RichTextBoxFormatter class.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.RichTextBoxFormatter.Write(System.String,System.Collections.Generic.IList{System.Windows.Controls.Samples.SyntaxHighlighting.Scope},System.Windows.Controls.Samples.SyntaxHighlighting.IStyleSheet)">
+            <summary>
+            Writes to the underlying rich text control's paragraph.
+            </summary>
+            <param name="parsedSourceCode">The parsed source code string.</param>
+            <param name="scopes">Set of scopes identifying sections of the
+            parsed code, in order.</param>
+            <param name="styleSheet">The style sheet to use for coloring.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.RichTextBoxFormatter.GetStyleInsertionsForCapturedStyle(System.Windows.Controls.Samples.SyntaxHighlighting.Scope,System.Collections.Generic.ICollection{System.Windows.Controls.Samples.SyntaxHighlighting.TextInsertion})">
+            <summary>
+            Gets a set of style properties for the scope.
+            </summary>
+            <param name="scope">The scope.</param>
+            <param name="styleInsertions">The style insertions instance.</param>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.IStyleSheet">
+            <summary>
+            Defines the contract for a style sheet.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.IStyleSheet.Styles">
+            <summary>
+            Gets the dictionary of styles for the style sheet.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.LanguageRule">
+            <summary>
+            Defines a single rule for a language. For instance a language rule might define string literals for a given language.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.LanguageRule.#ctor(System.String,System.Collections.Generic.IDictionary{System.Int32,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Windows.Controls.Samples.SyntaxHighlighting.LanguageRule"/> class.
+            </summary>
+            <param name="regex">The regular expression that defines what the language rule matches and captures.</param>
+            <param name="captures">The scope indices and names of the regular expression's captures.</param>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.LanguageRule.Regex">
+            <summary>
+            Gets the regular expression that defines what the language rule matches and captures.
+            </summary>
+            <value>The regular expression that defines what the language rule matches and captures.</value>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.LanguageRule.Captures">
+            <summary>
+            Gets the scope indices and names of the regular expression's captures.
+            </summary>
+            <value>The scope indices and names of the regular expression's captures.</value>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.Languages">
+            <summary>
+            Provides easy access to ColorCode's built-in languages, as well as methods to load and find custom languages.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.Languages.FindById(System.String)">
+            <summary>
+            Finds a loaded language by the specified identifier.
+            </summary>
+            <param name="id">The identifier of the language to find.</param>
+            <returns>An <see cref="T:System.Windows.Controls.Samples.SyntaxHighlighting.ILanguage"/> instance if the specified identifier matches a loaded language; otherwise, null.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.Languages.Load(System.Windows.Controls.Samples.SyntaxHighlighting.ILanguage)">
+            <summary>
+            Loads the specified language.
+            </summary>
+            <param name="language">The language to load.</param>
+            <remarks>
+            If a language with the same identifier has already been loaded, the existing loaded language will be replaced by the new specified language.
+            </remarks>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.Languages.CSharp">
+            <summary>
+            Language support for C#.
+            </summary>
+            <value>Language support for C#.</value>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.Languages.VbDotNet">
+            <summary>
+            Language support for Visual Basic.NET.
+            </summary>
+            <value>Language support for Visual Basic.NET.</value>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.Languages.Xml">
+            <summary>
+            Language support for XML.
+            </summary>
+            <value>Language support for XML.</value>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.SourceLanguageType">
+            <summary>
+            The source language type for highlighting.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SyntaxHighlighting.SourceLanguageType.CSharp">
+            <summary>
+            C-Sharp language type.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SyntaxHighlighting.SourceLanguageType.VisualBasic">
+            <summary>
+            VB.NET language type.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SyntaxHighlighting.SourceLanguageType.Xaml">
+            <summary>
+            XAML language type.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SyntaxHighlighting.SourceLanguageType.Xml">
+            <summary>
+            XML language type.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.Style">
+            <summary>
+            Defines the styling for a given scope.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.Style.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Windows.Controls.Samples.SyntaxHighlighting.Style"/> class.
+            </summary>
+            <param name="scopeName">The name of the scope the style defines.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.Style.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+            <remarks>
+            Returns the scope name if specified, or String.Empty otherwise.
+            </remarks>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.Style.Background">
+            <summary>
+            Gets or sets the background color.
+            </summary>
+            <value>The background color.</value>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.Style.Foreground">
+            <summary>
+            Gets or sets the foreground color.
+            </summary>
+            <value>The foreground color.</value>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.Style.ScopeName">
+            <summary>
+            Gets or sets the name of the scope the style defines.
+            </summary>
+            <value>The name of the scope the style defines.</value>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.StyleDictionary">
+            <summary>
+            A dictionary of <see cref="T:System.Windows.Controls.Samples.SyntaxHighlighting.Style"/> instances, keyed by the styles' 
+            scope name.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.StyleDictionary.GetKeyForItem(System.Windows.Controls.Samples.SyntaxHighlighting.Style)">
+            <summary>
+            When implemented in a derived class, extracts the key from the 
+            specified element.
+            </summary>
+            <param name="item">The element from which to extract the key.</param>
+            <returns>The key for the specified element.</returns>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.StyleSheets">
+            <summary>
+            Provides easy access to ColorCode's built-in style sheets.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.StyleSheets.Default">
+            <summary>
+            Gets the default style sheet.
+            </summary>
+            <remarks>
+            The default style sheet mimics the default colorization scheme used
+            by Visual Studio 2008 to the extent possible.
+            </remarks>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.DefaultStyleSheet">
+            <summary>
+            Default style sheet implementation.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.DefaultStyleSheet.Name">
+            <summary>
+            Gets the name of the default style sheet.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.DefaultStyleSheet.Styles">
+            <summary>
+            Gets the Styles set.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox">
+            <summary>
+            A simple text control for displaying syntax highlighted source code.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox.TextBoxName">
+            <summary>
+            The name of the text block part.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox._colorizer">
+            <summary>
+            Shared static color coding system instance.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox._richTextBox">
+            <summary>
+            Backing field for the text block.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox.SourceLanguageProperty">
+            <summary>
+            Identifies the SourceLanguage dependency property.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox._ignorePropertyChange">
+            <summary>
+            Property change ignore field.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox.OnSourceLanguagePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            SourceLanguageProperty property changed handler.
+            </summary>
+            <param name="d">SyntaxHighlightingTextBlock that changed its SourceLanguage.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox.TextProperty">
+            <summary>
+            Identifies the Text dependency property.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox.OnTextPropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            TextProperty property changed handler.
+            </summary>
+            <param name="d">SyntaxHighlightingTextBlock that changed its Text.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox.#ctor">
+            <summary>
+            Initializes a new instance of the SyntaxHighlightingTextBlock
+            control.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox.OnApplyTemplate">
+            <summary>
+            Overrides the on apply template method.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox.HighlightContents">
+            <summary>
+            Clears and updates the contents.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox.CreateLanguageInstance(System.Windows.Controls.Samples.SyntaxHighlighting.SourceLanguageType)">
+            <summary>
+            Retrieves the language instance used by the highlighting system.
+            </summary>
+            <param name="type">The language type to create.</param>
+            <returns>Returns a new instance of the language parser.</returns>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox.SourceLanguage">
+            <summary>
+            Gets or sets the source language type.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.SyntaxHighlighting.SyntaxHighlightingTextBox.Text">
+            <summary>
+            Gets or sets the source code to display inside the syntax
+            highlighting text block.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.Samples.WebServiceHelper">
+            <summary>
+            A set of simple helpers to enable the creation of more robust web 
+            service samples. Includes a centralized place to get generic addresses 
+            for service requests and web pages.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.WebServiceHelper.SearchSuggestionsJsonUriFormat">
+            <summary>
+            The format of the URI for JSON requests to Bing Suggestions.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.WebServiceHelper.WebSearchUriFormat">
+            <summary>
+            Standard Bing Search address.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.Samples.WebServiceHelper.AirfareSearchUriFormat">
+            <summary>
+            A format string for creating a link to look at airline fares online.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.WebServiceHelper.CreateWebSearchUri(System.String)">
+            <summary>
+            Creates a Uri to navigate to a web search service.
+            </summary>
+            <param name="searchText">The search string.</param>
+            <returns>Returns a new Uri instance.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.WebServiceHelper.CreateWebSearchSuggestionsUri(System.String)">
+            <summary>
+            Creates a Uri for retrieving search suggestion phrases.
+            </summary>
+            <param name="searchText">The search string.</param>
+            <returns>Returns a new Uri instance.</returns>
+        </member>
+        <member name="M:System.Windows.Controls.Samples.WebServiceHelper.CreateAirfareSearchUri(System.Windows.Controls.Samples.Airport,System.Windows.Controls.Samples.Airport,System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            Creates a Uri to look up flight pricing trends online using Bing
+            Travel.
+            </summary>
+            <param name="departureAirport">The departure airport object.</param>
+            <param name="arrivalAirport">The arrival airport object.</param>
+            <param name="departure">The departure date.</param>
+            <param name="arrival">The arrival date.</param>
+            <param name="persons">The number of people that will be traveling.</param>
+            <returns>Returns a new Uri object.</returns>
+        </member>
+        <member name="P:System.Windows.Controls.Samples.WebServiceHelper.CanMakeHttpRequests">
+            <summary>
+            Gets a value indicating whether the document scheme allows for web 
+            service access.
+            </summary>
+            <returns>Returns true when the scheme should permit web requests.</returns>
+        </member>
+    </members>
+</doc>
